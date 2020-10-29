@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> To Do App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="welcome-bar">
+            <h1 class="main-title">Daily Planner</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <div>
+                <h2 class="small-title">To-do list</h2>
+            </div>
+            <form class='field-container'>
+                <input type="text" id="field" name="field" autocomplete="off">
+                <label for="field"><span class="field-msg">Add a task</span></label>
+                <button type="submit" class='btn'>ADD</button>
+            </form>
+
+        </div>
+        <div class="items"></div>
+        <ul id="item-list">
+
+        </ul>
+    </main>
+
+    <footer>
+        <p>
+            Done is better than perfect.
+        </p>
+    </footer>
+
+
+    <script src="./javaScript.js"></script>
+</body>
+
+</html>
