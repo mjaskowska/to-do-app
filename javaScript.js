@@ -7,7 +7,9 @@ btn.addEventListener('click', addItem);
 function addItem(e) {
     e.preventDefault();
     if (fieldInput.value === '') {
-        alert('nothing to add.');
+        errorMsg.innerHTML = "Nothing to add.";
+        errorMsg.style.display = "block";
+        setTimeout(() => errorMsg.remove(), 2000);
     } else {
         const li = document.createElement('li');
         li.setAttribute('class', 'item');
