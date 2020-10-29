@@ -42,7 +42,7 @@ header {
 }
 
 .error-msg {
-    display: block;
+    display: none;
     font-size: 10px;
 }
 
